@@ -12,7 +12,7 @@ const NewsAddItem: FC<INewsAddItemProps> = ({ add }) => {
   return (
     <div className="news-add-item">
       <textarea value={newsText} onChange={({ currentTarget: { value } }) => setNewsText(value)} />
-      <button disabled={!newsText} onClick={onAddNewsItemButtonClicked}>+</button>
+      <button className="news-add-item__action" disabled={!newsText} onClick={onAddNewsItemButtonClicked}>+</button>
     </div>
   )
 }

@@ -30,7 +30,7 @@ const News = () => {
 
   return (
     <div className="news">
-      <h4 className="news__heading">Список новостей</h4>
+      <h1 className="news__heading">Лента новостей</h1>
       <NewsList news={news} remove={removeNewsItem} edit={editNewsItem} />
       <NewsAddItem add={addNewsItem} />
     </div>

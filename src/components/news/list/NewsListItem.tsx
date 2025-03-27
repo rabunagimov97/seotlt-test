@@ -22,6 +22,14 @@ const NewsListItem: FC<INewsListItemProps> = ({ item, remove, edit }) => {
 
   return (
     <div className="news-list-item">
+      {isEditMode ? (
+        <div className="news-list-item__edit">
+          <textarea value={newsText} onChange={({ currentTarget: { value } }) => setNewsText(value)} />
+          <button onClick={onEditDoneButtonClicked}>✓</button>
+        </div>
+      ) : (
+        <div className="news-list-item__text">{text}</div>
+      )}
       <div className="news-list-item__heading">
         <span>Добавлено: {new Date(date).toLocaleString()}</span>
         <span className="news-list-item__actions">
@@ -29,14 +37,6 @@ const NewsListItem: FC<INewsListItemProps> = ({ item, remove, edit }) => {
           <NewsListItemEditModeButton isEditMode={isEditMode} setEditMode={setEditMode} />
         </span>
       </div>
-      {isEditMode ? (
-        <div className="news-list-item__edit">
-          <textarea value={newsText} onChange={({ currentTarget: { value } }) => setNewsText(value)} />
-          <button onClick={onEditDoneButtonClicked}>✓</button>
-        </div>
-      ) : (
-        <div>{text}</div>
-      )}
     </div>
   )
 }
