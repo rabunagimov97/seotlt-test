@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/seotlt-test/static/css/main.483fa13d.css",
-    "main.js": "/seotlt-test/static/js/main.8c3b35ae.js",
+    "main.css": "/seotlt-test/static/css/main.c7c97885.css",
+    "main.js": "/seotlt-test/static/js/main.b5ecb38e.js",
     "index.html": "/seotlt-test/index.html",
-    "main.483fa13d.css.map": "/seotlt-test/static/css/main.483fa13d.css.map",
-    "main.8c3b35ae.js.map": "/seotlt-test/static/js/main.8c3b35ae.js.map"
+    "main.c7c97885.css.map": "/seotlt-test/static/css/main.c7c97885.css.map",
+    "main.b5ecb38e.js.map": "/seotlt-test/static/js/main.b5ecb38e.js.map"
   },
   "entrypoints": [
-    "static/css/main.483fa13d.css",
-    "static/js/main.8c3b35ae.js"
+    "static/css/main.c7c97885.css",
+    "static/js/main.b5ecb38e.js"
   ]
 }
